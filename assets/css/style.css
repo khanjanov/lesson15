@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 76%;
+    margin: 0px 124px;
+    padding: 2% 0;
+    /* border: 1px solid blue; */
+}
+
+.maintext h2 {
+    font-size: 55px;
+    line-height: 101.38%;
+    height: 93px;
+    margin-bottom: 18px;
+}
+
+.maintext p {
+    font-size: 20px;
+    line-height: 150%;
+    text-align: left;
+    margin-bottom: 94px;
+}
+
+.manwithscreen {
+    margin-top: 148px;
+    margin-left: 75px;
+}
+
+.firstellipse {
+    position: absolute;
+    width: 27vw;
+    height: 4.31vw;
+    left: 940px;
+    top: 460px;
+    z-index: -1;
+}
+
+.lightoperatorandfewtexts {
+    align-items: center;
+}
+
+.lightoperator {
+    width: 232px;
+}
+
+.secondellipse {
+    position: absolute;
+    width: 189px;
+    height: 32px;
+    left: 155px;
+    top: 750px;
+    z-index: -1;
+}
+
+.fewtexts h4 {
+    font-size: 25px;
+    line-height: 130%;
+    padding-bottom: 1px;
+}
+
+.fewtexts p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+@media screen and (max-width: 830px) {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+    body {
+        font-family: 'Roboto Slab', serif;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        margin: 0px 90px;
+        /* border: 1px solid blue; */
+    }
+
+    .maintext h2 {
+        font-size: 32px;
+        height: 53px;
+        margin-bottom: 10px;
+    }
+
+    .maintext p {
+        font-size: 12px;
+        text-align: left;
+        margin-bottom: 70px;
+    }
+
+    .manwithscreen {
+        margin-left: 0;
+        width: 19vw;
+        position: absolute;
+        top: -50px;
+    }
+
+    .firstellipse {
+        position: absolute;
+        width: 52vw;
+        height: 3.4vw;
+        left: 425px;
+        top: 241px;
+        z-index: -1;
+    }
+
+    .lightoperatorandfewtexts {
+        margin-left: -410px;
+    }
+
+    .lightoperator,
+    .secondellipse {
+        display: none;
+    }
+
+    .fewtexts h4 {
+        font-size: 15px;
+        padding-bottom: 1px;
+    }
+
+    .fewtexts p {
+        font-size: 11px;
+    }
+
+}

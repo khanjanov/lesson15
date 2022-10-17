@@ -74,6 +74,8 @@ body {
     line-height: 130%;
 }
 
+/* tablet */
+
 @media screen and (max-width: 830px) {
     
     .container {
@@ -125,6 +127,55 @@ body {
 
     .fewtexts p {
         font-size: 11px;
+    }
+
+}
+/* mobile */
+@media screen and (max-width:375px) {
+    .container {
+        margin: 0px 36px;
+        /* border: 1px solid blue; */
+    }
+
+    .maintext h2 {
+        font-size: 26px;
+        height: 43px;
+        margin-bottom: 8px;
+    }
+
+    .maintext p {
+        font-size: 12px;
+        text-align: left;
+        margin-bottom: 70px;
+    }
+    
+    .manwithscreen {
+        display: block;
+        width: 19vw;
+    }
+
+    .firstellipse {
+        display: block;
+        width: 52vw;
+        z-index: -1;
+    }
+
+    .lightoperatorandfewtexts {
+        display: block;
+    }
+
+    .lightoperator,
+    .secondellipse {
+        display: none;
+    }
+
+    .fewtexts h4 {
+        font-size: 12px;
+        padding-bottom: 1px;
+    }
+
+    .fewtexts p {
+        font-size: 10px;
     }
 
 }

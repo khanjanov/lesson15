@@ -1,181 +1,175 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-    font-family: 'Roboto Slab', serif;
+    font-family: Roboto;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+section {
+    padding: 30px 100px;
+}
+
+h2 {
+    font-family: Roboto Slab;
+    font-size: 55px;
 }
 
 .container {
-    width: 76%;
-    margin: 0px 124px;
-    padding: 2% 0;
-    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.maintext h2 {
-    font-size: 55px;
-    line-height: 101.38%;
-    height: 93px;
-    margin-bottom: 18px;
+p {
+    width: 60%;
+    font-family: Roboto;
+    font-size: 24px;
 }
 
-.maintext p {
-    font-size: 20px;
-    line-height: 150%;
-    text-align: left;
-    margin-bottom: 94px;
+.manwithscreenandellipse {
+    display: grid;
 }
 
 .manwithscreen {
-    margin-top: 148px;
-    margin-left: 75px;
+    width: 314px;
+    height: 315px;
 }
 
 .firstellipse {
-    position: absolute;
-    width: 27vw;
-    height: 4.31vw;
-    left: 940px;
-    top: 460px;
+    position: relative;
+    bottom: 25px;
     z-index: -1;
-}
-
-.lightoperatorandfewtexts {
-    align-items: center;
+    right: 4%;
 }
 
 .lightoperator {
     width: 232px;
+    height: 203px;
 }
 
 .secondellipse {
-    position: absolute;
-    width: 189px;
-    height: 32px;
-    left: 155px;
-    top: 750px;
+    position: relative;
+    bottom: 18px;
+    left: 8%;
     z-index: -1;
 }
 
-.fewtexts h4 {
-    font-size: 25px;
-    line-height: 130%;
-    padding-bottom: 1px;
+.main-item {
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }
 
-.fewtexts p {
-    font-weight: 400;
+.container-two,
+.main-item {
+    display: flex;
+    align-items: center;
+}
+
+.item h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.item span {
     font-size: 18px;
-    line-height: 130%;
 }
 
-/* tablet */
-
-@media screen and (max-width: 830px) {
-    
-    .container {
-        margin: 0px 90px;
-        /* border: 1px solid blue; */
+/* 1440px-840-375-0 */
+@media screen and (min-width:840px) and (max-width: 1120px) {
+    .image-2 {
+        display: none;
     }
 
-    .maintext h2 {
+    h2 {
         font-size: 32px;
-        height: 53px;
-        margin-bottom: 10px;
     }
 
-    .maintext p {
-        font-size: 12px;
-        text-align: left;
-        margin-bottom: 70px;
+    p {
+        width: 383.41px;
+        font-size: 14px;
     }
 
-    .manwithscreen {
+    .firstellipse {
+        width: 211.98px;
+        height: 34.17px;
+        bottom: 21px;
+        right: 8%;
+    }
+
+    .main-item {
+        width: 55%;
+        flex-wrap: wrap;
         margin-left: 0;
-        width: 19vw;
-        position: absolute;
-        top: -50px;
     }
 
-    .firstellipse {
-        position: absolute;
-        width: 52vw;
-        height: 3.4vw;
-        left: 425px;
-        top: 241px;
-        z-index: -1;
-    }
-
-    .lightoperatorandfewtexts {
-        margin-left: -410px;
-    }
-
-    .lightoperator,
-    .secondellipse {
-        display: none;
-    }
-
-    .fewtexts h4 {
-        font-size: 15px;
-        padding-bottom: 1px;
-    }
-
-    .fewtexts p {
-        font-size: 11px;
-    }
-
-}
-/* mobile */
-@media screen and (max-width:375px) {
-    .container {
-        margin: 0px 36px;
-        /* border: 1px solid blue; */
-    }
-
-    .maintext h2 {
-        font-size: 26px;
-        height: 43px;
-        margin-bottom: 8px;
-    }
-
-    .maintext p {
-        font-size: 12px;
-        text-align: left;
-        margin-bottom: 70px;
-    }
-    
     .manwithscreen {
-        display: block;
-        width: 19vw;
+        width: 181.86px;
+        height: 181.86px;
     }
 
-    .firstellipse {
-        display: block;
-        width: 52vw;
-        z-index: -1;
-    }
-
-    .lightoperatorandfewtexts {
-        display: block;
-    }
-
-    .lightoperator,
-    .secondellipse {
+    .lightoperatorandellipse {
         display: none;
     }
 
-    .fewtexts h4 {
-        font-size: 12px;
-        padding-bottom: 1px;
+    .item h3 {
+        font-size: 15px;
     }
 
-    .fewtexts p {
+    .item span {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    section {
+        padding: 30px 37px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    p {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .manwithscreen {
+        width: 170.55px;
+        height: 160.29px;
+    }
+
+    .lightoperatorandellipse {
+        display: none;
+    }
+
+    .main-item {
+        margin-left: 0;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .item h3 {
+        font-size: 12px;
+    }
+
+    .item span {
         font-size: 10px;
     }
 
+    .firstellipse {
+        width: 197.55px;
+        height: 27.49px;
+        right: 5%;
+        bottom: 12px;
+    }
 }
